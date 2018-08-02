@@ -140,4 +140,29 @@ mydog=Dog()
 mydog.eat()
 mydog.who_am_i()
     
+""""""
+#super keyword
+class SimpleClass:
+    def __init__(self):
+        print('Hello')
+    def yell(self):
+        print('YELLING')
 
+l=SimpleClass()
+
+l.yell()
+
+class Inherited(SimpleClass):
+    def __init__(self):
+        print ("how are you?")
+        
+m=Inherited()
+m.yell()
+
+class Inherited(SimpleClass):
+    def __init__(self):
+        super().__init__() 
+        print ("how are you?")
+
+m=Inherited()
+m.yell()
